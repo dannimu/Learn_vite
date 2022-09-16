@@ -187,6 +187,7 @@ export default {
         {{isActive}}
       </div>
     </div>
+    测试远程推送
   </div>
 </template>
 <style lang="less" scoped>
