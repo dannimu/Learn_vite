@@ -1,5 +1,6 @@
 <script>
 import OtherContent from './OtherContent.vue'
+import CombinedApi from './CombinedApi.vue'
 //声明式渲染，可以提高开发效率
 export default {
   data() {
@@ -29,7 +30,8 @@ export default {
     };
   },
   components:{
-    OtherContent
+    OtherContent,
+    CombinedApi
   },
   //定义方法
   methods: {
@@ -96,9 +98,9 @@ export default {
       console.log('旧444',old);
     },
   },
-  mounted() {
-    console.log('111',this.$refs);
-  },
+  // mounted() {
+  //   console.log('111',this.$refs);
+  // },
 };
 </script>
 
@@ -198,7 +200,7 @@ export default {
       <div>
         <input type="checkbox" v-model="fruits" value="苹果">苹果
         <input type="checkbox" v-model="fruits" value="梨子">梨子
-        <h2>喜欢的水果{{fruits}}</h2>
+        <h3>喜欢的水果{{fruits}}</h3>
       </div>
     </div>
     <!-- v-model 修饰符 -->
@@ -227,6 +229,9 @@ export default {
           <button>v-slot:ccc</button>
         </template>
       </other-content>
+    </div>
+    <div class="once">
+      <combined-api/>
     </div>
   </div>
 </template>

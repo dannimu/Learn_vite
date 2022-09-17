@@ -1,5 +1,6 @@
 <template>
     <div class="other-content">
+        <h2>组件基础</h2>
         <!-- 组件 -->
        <div class="components">
             <div>组件 {{num}}</div>
@@ -16,7 +17,7 @@
        </div>
        <!-- provide与inject 爷爷组件（app.vue）直接向孙子组件（OtherContent.vue）传值 -->
        <div class="components focus">
-           <h2>重点✨</h2>
+           <h3>重点✨</h3>
            <div>{{meg}}</div>
            <div>{{obj.nums}}</div>
        </div>
@@ -24,8 +25,6 @@
 </template>
 <style lang="less" scoped>
 .other-content{
-    margin-top: 10px;
-    border-top: 10px yellow solid;
     .components{
         border: 3px solid rgb(0, 174, 255);
     }
@@ -40,7 +39,7 @@ export default {
         num:{
             type:String,
             // default 设置变量默认值
-            default:'1233',
+            default:'default 设置变量默认值',
         }
     },
     methods:{
