@@ -95,7 +95,10 @@ export default {
       // console.log('新333',arr);
       console.log('旧444',old);
     },
-  }
+  },
+  mounted() {
+    console.log('111',this.$refs);
+  },
 };
 </script>
 
@@ -204,8 +207,27 @@ export default {
       <input type="text" v-model.number="counter">
       {{ typeof counter }}
     </div>
-    <hr v-for="i in 10" :key="i">
-    <other-content :num="uname" @sendParent="changeUname"/>
+    <div class="once">
+      <!-- 父子组件的访问方式 -->
+      <!-- <other-content :num="uname" @sendParent="changeUname"/> -->
+      <!-- 父组件访问子组件。$refs （仅了解）-->
+      <!-- <other-content ref="other-content"/> -->
+      <!-- 子组件访问父组件. $parent （仅了解）-->
+      <!-- 子组件访问根组件. $root （仅了解）-->
+      <other-content>
+        <!-- v-slot只能在template标签上使用 -->
+        <!-- v-slot:aaa     vue3的新语法 -->
+        <template v-slot:aaa>v-slot:aaa 显示到插槽里面的内容</template>
+        <!-- v-slot:bbb     vue3的新语法 -->
+        <template v-slot:bbb>
+          <div>v-slot:bbb</div>
+        </template>
+        <!-- v-slot:ccc     vue3的新语法 -->
+        <template v-slot:ccc>
+          <button>v-slot:ccc</button>
+        </template>
+      </other-content>
+    </div>
   </div>
 </template>
 <style lang="less" scoped>
