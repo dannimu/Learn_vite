@@ -1,8 +1,10 @@
 <template>
     <div class="life-cycle">
         <h2>生命周期</h2>
-        {{counter}}
-        <button @click="counter++">改变counter</button>
+        <div>
+            {{counter}}
+            <button @click="counter++">改变counter</button>
+        </div>
     </div>
 </template>
 <style lang="less" scoped>

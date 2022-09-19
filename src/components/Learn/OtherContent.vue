@@ -15,7 +15,7 @@
                <slot name="ccc"/>
            </div>
        </div>
-       <!-- provide与inject 爷爷组件（app.vue）直接向孙子组件（OtherContent.vue）传值 -->
+       <!-- provide与inject 爷爷组件（learn.vue）直接向孙子组件（OtherContent.vue）传值 -->
        <div class="components focus">
            <h3>重点✨</h3>
            <div>{{meg}}</div>

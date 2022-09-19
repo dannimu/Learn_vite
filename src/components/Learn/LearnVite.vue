@@ -1,7 +1,5 @@
 <script>
 import OtherContent from './OtherContent.vue'
-import CombinedApi from './CombinedApi.vue'
-import LifeCycle from './LifeCycle.vue'
 //声明式渲染，可以提高开发效率
 export default {
   data() {
@@ -32,8 +30,6 @@ export default {
   },
   components:{
     OtherContent,
-    CombinedApi,
-    LifeCycle,
   },
   //定义方法
   methods: {
@@ -232,9 +228,6 @@ export default {
         </template>
       </other-content>
     </div>
-    <!-- 生命周期 -->
-    <life-cycle/>
-    <combined-api/>
   </div>
 </template>
 <style lang="less" scoped>
