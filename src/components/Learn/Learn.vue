@@ -9,7 +9,7 @@
     <watch-api />
     <computed-api />
     <life-api />
-    <context-api :meg="meg" :obj="obj" class="box" id="aaa">
+    <context-api :meg="meg" :obj="obj" class="box" id="aaa" @injectCounter="injectCounter">
       <template v-slot:ppp>
         <div>
           通过context.slots拿取父组件插槽里面的内容，并展示到子组件
@@ -20,6 +20,7 @@
 </template>
 <script>
 //vue3 引入子组件，子组件名后方必须加文件类型，例如：.vue  .js  等等
+import {ref} from 'vue'
 import LearnVite from './LearnVite.vue'
 import LifeCycle from './LifeCycle.vue'
 import CombinedApi from './CombinedApi.vue'
@@ -57,6 +58,23 @@ export default {
       meg:this.meg,
       obj:this.obj,  //事件，通过响应式对象的方式
     }  
-  }
+  },
+
+//1. vue2写法 子组件向父组件拿值 injectCounter(value)事件
+  // methods:{
+  //   injectCounter(value){
+  //     value++
+  //   }
+  // },
+  setup() {
+
+// 2. vue3写法 子组件向父组件拿值 injectCounter(value)事件
+    function injectCounter(value) {
+      value.value++
+    }
+    return{
+      injectCounter
+    }
+  },
 }
 </script>

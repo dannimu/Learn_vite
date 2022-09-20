@@ -28,7 +28,7 @@
 <script> 
 //ref()只能定义Number和String类型
 //reactive()可以定义对象
-import {reactive, ref,} from 'vue'  
+import {reactive, ref} from 'vue'  
 export default {
     //setup()组件被创建之前执行
     //setup() 是围绕beforeCreate created生命周期钩子运行的，所以不需要再次显式地定义它们
