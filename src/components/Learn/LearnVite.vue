@@ -1,5 +1,6 @@
 <script>
-import OtherContent from './OtherContent.vue'
+import Vue2Content from './Vue2Content.vue'
+import ProvideApi from './ProvideApi.vue'
 //声明式渲染，可以提高开发效率
 export default {
   data() {
@@ -29,7 +30,8 @@ export default {
     };
   },
   components:{
-    OtherContent,
+    Vue2Content,
+    ProvideApi,
   },
   //定义方法
   methods: {
@@ -214,7 +216,7 @@ export default {
       <!-- <other-content ref="other-content"/> -->
       <!-- 子组件访问父组件. $parent （仅了解）-->
       <!-- 子组件访问根组件. $root （仅了解）-->
-      <other-content>
+      <vue2-content>
         <!-- v-slot只能在template标签上使用 -->
         <!-- v-slot:aaa     vue3的新语法 -->
         <template v-slot:aaa>v-slot:aaa 显示到插槽里面的内容</template>
@@ -226,7 +228,10 @@ export default {
         <template v-slot:ccc>
           <button>v-slot:ccc</button>
         </template>
-      </other-content>
+      </vue2-content>
+    </div>
+    <div class="once">
+      <provide-api />
     </div>
   </div>
 </template>

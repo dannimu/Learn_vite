@@ -15,9 +15,9 @@
                <slot name="ccc"/>
            </div>
        </div>
-       <!-- provide与inject 爷爷组件（learn.vue）直接向孙子组件（OtherContent.vue）传值 -->
+       <!-- provide与inject 爷爷组件（learn.vue）直接向孙子组件（Vue2Content.vue）传值 -->
        <div class="components focus">
-           <h3>重点✨</h3>
+           <h2>vue2 爷爷组件（learn.vue）直接向孙子组件（Vue2Content.vue）传值  重点✨</h2>
            <div>{{meg}}</div>
            <div>{{obj.nums}}</div>
        </div>
@@ -48,7 +48,7 @@ export default {
             this.$emit('sendParent',this.num)
         }
     },
-    //inject 孙子组件（OtherContent.vue）接收
+    //inject 孙子组件（Vue2Content.vue）接收
     inject:['meg','obj']
 }
 </script>

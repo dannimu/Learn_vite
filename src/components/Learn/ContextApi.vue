@@ -53,7 +53,7 @@ export default {
             context.emit('injectCounter',counter)
         }
         // (4) 暴露公共函数   (一般使用不到)
-        console.log(context.expose);
+        // console.log(context.expose);
 
 
         
