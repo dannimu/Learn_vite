@@ -105,7 +105,7 @@ export default {
 </script>
 
 <template> 
-  <div class="app">
+  <div class="learn-vite">
     <div class="once">
       <div>没有v-once {{ uname }}</div>
       <!-- v-once 仅渲染元素和组件一次，并跳过之后的更新。 -->
@@ -236,7 +236,7 @@ export default {
   </div>
 </template>
 <style lang="less" scoped>
-.app { 
+.learn-vite { 
   .once {
     border: 3px solid red;
   }

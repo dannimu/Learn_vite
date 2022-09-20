@@ -1,13 +1,9 @@
 <template>
-  <div>
-    <learn />
+  <div class="app">
+    <p>
+      <router-link to="/" >go to home22</router-link>
+      <router-link to="/Practise" >go2 to Practise</router-link>
+    </p>
+    <router-view />
   </div>
 </template>
-<script>
-import Learn from './components/Learn/Learn.vue'
-export default {
-  components:{
-    Learn,
-  },
-}
-</script>

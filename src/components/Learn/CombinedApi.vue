@@ -15,7 +15,7 @@
             <button @click="changeOther">一个变量改变两个变量</button>
         </div>
         <div>
-            {{obj}}==========={{obj.children.gender}}
+            {{obj}}====={{obj.children.gender}}
             <button @click="changeObj">改变对象中属性的值</button>
         </div>
     </div>
