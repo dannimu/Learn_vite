@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <!-- 路由 -->
     <p>
       <router-link to="/">go to home</router-link>
       <router-link to="/practise">go to Practise</router-link>
@@ -20,3 +21,4 @@
     <router-view />
   </div>
 </template>
+

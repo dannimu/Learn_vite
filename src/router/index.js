@@ -3,7 +3,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   { 
     path: '/',
-    // component: Layout,
     component:() => import('../views/Layout.vue')
     //路由重定向
     // redirect: '/parents',

@@ -2,6 +2,7 @@
   <div class="layout">
     <learn class="learn" />
     <div class="practise">
+      {{msg}}
       <div v-for="i in 200" :key="i" >{{i}}</div>
     </div>
   </div>
