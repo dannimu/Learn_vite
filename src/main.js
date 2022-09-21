@@ -1,15 +1,18 @@
 import { createApp } from 'vue'
-import router from './plugins/router'
+import router from './router'
 import './style.css'
 // ./App.vue 为根组件
 import App from './App.vue'
-// import ElementPlus from 'element-plus'
-// import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
-app.mount('#app')
+//先 app.use() 后 app.mount('#app') 顺序不能颠倒
+app.use(ElementPlus)
 app.use(router)
-// app.use(ElementPlus)
+app.mount('#app')
+
+
 // app.mount('#app')
  
 

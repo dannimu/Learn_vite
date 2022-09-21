@@ -18,3 +18,26 @@ body{
 html , body , #app , .app, .layout, .learn, .practise{
   height: 100%;
 }
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+a{
+  margin: 8px;
+  padding: 5px;
+  color: rgb(66, 210, 210) !important;
+  text-decoration: none;
+  border: 1px #fff solid; 
+  border-radius:10px;
+}

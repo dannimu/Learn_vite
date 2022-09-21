@@ -2,7 +2,7 @@
   <div class="layout">
     <learn class="learn" />
     <div class="practise">
-      <div v-for="i in 300" :key="i" >{{i}}</div>
+      <div v-for="i in 200" :key="i" >{{i}}</div>
     </div>
   </div>
 </template>
@@ -21,11 +21,6 @@
   }
 }
 </style>
-<script>
+<script setup>
 import Learn from '../components/Learn/Learn.vue'
-export default {
-  components:{
-    Learn,
-  },
-}
 </script>
