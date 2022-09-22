@@ -21,4 +21,14 @@
     <router-view />
   </div>
 </template>
+<script>
+//引入集中状态管理仓库
+import store from './store'
+export default {
+  //父组件导出集中仓库变量，需要子组件引入
+  provide:{
+    store
+  }
+}
+</script>
 

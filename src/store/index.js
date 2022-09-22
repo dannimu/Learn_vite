@@ -10,6 +10,14 @@ const store = {
     //state作为store对象中的属性,定义状态
     state:reactive({
         msg:'vue3 中如何设置集中状态管理',
+    }),
 
-    })
+    //实现也孙子组件响应式
+    updateMag(){
+        this.state.msg= '子组件与集中仓库变量形成响应式'
+    },
 }
+
+
+//导出仓库   （需要app.vue组件引入）
+export default store
