@@ -1,4 +1,4 @@
-//封装axios 请求
+//封装 axios 请求
 import axios from 'axios'
 
 // create an axios instance
