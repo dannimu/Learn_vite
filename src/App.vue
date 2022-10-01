@@ -17,6 +17,8 @@
       <router-link to="/parents">嵌套路由 父 parents</router-link>
       <!-- 通过js跳转页面 -->
       <router-link to="/jump">通过js跳转页面 jump</router-link>
+      <!-- 今日吃啥 -->
+      <router-link to="/whateat">今日吃啥</router-link>
     </p>
     <router-view />
   </div>

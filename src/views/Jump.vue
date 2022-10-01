@@ -1,9 +1,14 @@
 <template>
-  <div>
+  <div class="app-jump">
     <h2>jump 跳转页面</h2>
     <button @click="changRouter">$router 跳转页面</button>
   </div>
 </template>
+<style lang="less" scoped>
+button{
+  color: black;
+}
+</style>
 <script>
 export default {
   methods: {

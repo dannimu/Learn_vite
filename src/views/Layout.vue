@@ -79,11 +79,11 @@ export default {
     
     // post请求
     // www:this.num   向后端 www 传递了this.num 的参数
-    this.$post('http://127.0.0.1:3000/yinan2',{www:this.num})
-    .then(res => {
-      this.list = res
-      this.name = res.aaa
-    })
+    // this.$post('http://127.0.0.1:3000/yinan2',{www:this.num})
+    // .then(res => {
+    //   this.list = res
+    //   this.name = res.aaa
+    // })
   },
 }
 </script>

@@ -57,6 +57,13 @@ const routes = [
   },
 
 
+  //今日吃啥
+  { 
+    path: '/whateat',
+    component:() => import('../views/WhatEat.vue'),
+  },
+
+
 
 
   // 找不到页面 404页面，需要用到正则的方式,匹配任意的
