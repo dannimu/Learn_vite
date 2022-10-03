@@ -59,8 +59,8 @@ const routes = [
 
   //今日吃啥
   { 
-    path: '/whateat',
-    component:() => import('../views/WhatEat.vue'),
+    path: '/question',
+    component:() => import('../views/Question.vue'),
   },
 
 

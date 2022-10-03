@@ -5,6 +5,8 @@ import './style.css'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import Vant from 'vant';
+import 'vant/lib/index.css';
 
 // import request from './request'
 // import prototypes from './prototypes'
@@ -22,6 +24,7 @@ app.config.globalProperties.$http = axios
 //先 app.use() 后 app.mount('#app') 顺序不能颠倒
 app.use(ElementPlus)
 app.use(router)
+app.use(Vant);
 app.provide('$http',axios)
 app.mount('#app')
 
