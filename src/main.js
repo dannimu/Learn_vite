@@ -12,6 +12,8 @@ import 'vant/lib/index.css';
 // import prototypes from './prototypes'
 import axios from 'axios'
 
+// git 提交测试
+
 const app = createApp(App)
 //封装 axios
 // app.config.globalProperties.$request = request
